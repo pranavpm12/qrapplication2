@@ -13,10 +13,10 @@ class _RegisterPageState extends State<RegisterPage> {
   final TextEditingController usernameController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
-  void _redirectToNewPage() {
-    // Replace the route name with the desired route for the new webpage
-    Navigator.pushNamed(context, '/newPage');
-  }
+  // void _redirectToNewPage() {
+  //   // Replace the route name with the desired route for the new webpage
+  //   Navigator.pushNamed(context, '/newPage');
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +78,7 @@ class _RegisterPageState extends State<RegisterPage> {
               ),
               SizedBox(height: 20),
               ElevatedButton(
-                onPressed: _redirectToNewPage,
+                onPressed: (){},
                 child: Text('Register'),
               ),
             ],
