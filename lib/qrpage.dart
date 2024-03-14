@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
+import 'package:qrapplication/scan.dart';
 
 
 void main() {
@@ -35,6 +36,11 @@ class qrpage extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Scan(),
+                      ));
                   // Add your 'Scan' button functionality here
                 },
                 child: Text('Scan'), // Button title

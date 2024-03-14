@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qrapplication/developer.dart';
 
 
 
@@ -78,7 +79,13 @@ class _RegisterPageState extends State<RegisterPage> {
               ),
               SizedBox(height: 20),
               ElevatedButton(
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => developer(),
+                      ));
+                },
                 child: Text('Register'),
               ),
             ],
